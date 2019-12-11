@@ -7,17 +7,18 @@
 <ion-content>
   <ion-item>
     <ion-label position="floating">Usuário</ion-label>
-    <ion-input type="text" name="usuario" id="usuario"></ion-input>
+    <ion-input type="text" name="usuario" [(ngModel)]="modelUS.usuario"></ion-input>
   </ion-item>
 
 
   <ion-item>
     <ion-label position="floating">Senha</ion-label>
-    <ion-input type="password" name="senha" id="senha" maxlength="8"></ion-input>
+    <ion-input type="password" name="senha" id="senha" maxlength="8" [(ngModel)]="modelUS.senha"></ion-input>
   </ion-item>
 
-  <ion-label class="areaOu">
-  Ou
+  <ion-label class="btnfacebook" (click)="efetuarLogin()">
+    <ion-icon name="pizza"></ion-icon>
+  
   </ion-label>
   
   <ion-label class="btnRedeSocial" (click)="logarfacebook()">

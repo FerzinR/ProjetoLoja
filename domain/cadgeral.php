@@ -79,10 +79,12 @@ class CadGeral{
 
                 if($stmt->execute()){
                     return true;
+
                 }
                 else{
                     
                     return false;
+                    echo json_encode(array("mensagem"=>$stmt->erroriinfo()));
                 }
             }
             
