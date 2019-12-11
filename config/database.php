@@ -15,8 +15,8 @@ class Database{
     public $conexao;
     public function getConnection(){
         try{
-            $conexao =  new PDO("mysql:host=mysql22.redehost.com.br;
-            port=3306;dbname=apidb","alunos","Alunos#api1");
+            $conexao =  new PDO("mysql:host=localhost;
+            port=3306;dbname=dbloja","root","");
             #definir o tipo de caracter para o banco como utf8 que é caracter acentuado
             $conexao->exec("set name utf8");
         }
